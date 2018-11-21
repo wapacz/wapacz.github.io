@@ -1,0 +1,184 @@
+
+	<head>
+            <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <title>Angular 2/4 &amp; Bootstrap</title>
+	    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700" rel="stylesheet" type="text/css">
+			<link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css">
+			<link rel="stylesheet" type="text/css" href="../assets/styles/crisp.css?v=deb99df769">
+	    <meta name="HandheldFriendly" content="True">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+			<!--[if lt IE 9]>
+				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+				<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+			<![endif]-->
+			
+	    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="amp/index.html">
+    
+    <meta property="og:site_name" content="w@pache">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Angular 2/4 &amp; Bootstrap">
+    <meta property="og:description" content="First need to install Boostrap, jQuery and ng-bootstrap with:   npm install bootstrap jquery @ng-bootstrap/ng-bootstrap --save Next add Boostrap and jQuery file paths to angular-cli.json:   &amp;quot;styles&amp;quot;: [     &amp;quot;styles.css&amp;quot;,     &amp;quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&amp;quot;   ],   &amp;quot;scripts&amp;quot;: [     &amp;quot;../node_modules/jquery/">
+    <meta property="og:url" content="http://localhost:2368/angular-2-4-bootstrap/">
+    <meta property="article:published_time" content="2018-01-26T08:18:49.000Z">
+    <meta property="article:modified_time" content="2018-01-26T08:38:38.000Z">
+    <meta property="article:tag" content="Angular">
+    <meta property="article:tag" content="JavaScript">
+    <meta property="article:tag" content="web">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Angular 2/4 &amp; Bootstrap">
+    <meta name="twitter:description" content="First need to install Boostrap, jQuery and ng-bootstrap with:   npm install bootstrap jquery @ng-bootstrap/ng-bootstrap --save Next add Boostrap and jQuery file paths to angular-cli.json:   &amp;quot;styles&amp;quot;: [     &amp;quot;styles.css&amp;quot;,     &amp;quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&amp;quot;   ],   &amp;quot;scripts&amp;quot;: [     &amp;quot;../node_modules/jquery/">
+    <meta name="twitter:url" content="http://localhost:2368/angular-2-4-bootstrap/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Michał Łapacz">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Angular, JavaScript, web">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "w@pache",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/2017/12/hand.jpg",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Michał Łapacz",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/785a0bbce82085cf46e7e844469b58e5?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "http://localhost:2368/author/michal/",
+        "sameAs": []
+    },
+    "headline": "Angular 2/4 &amp; Bootstrap",
+    "url": "http://localhost:2368/angular-2-4-bootstrap/",
+    "datePublished": "2018-01-26T08:18:49.000Z",
+    "dateModified": "2018-01-26T08:38:38.000Z",
+    "keywords": "Angular, JavaScript, web",
+    "description": "First need to install Boostrap, jQuery and ng-bootstrap with:   npm install bootstrap jquery @ng-bootstrap/ng-bootstrap --save Next add Boostrap and jQuery file paths to angular-cli.json:   &amp;quot;styles&amp;quot;: [     &amp;quot;styles.css&amp;quot;,     &amp;quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&amp;quot;   ],   &amp;quot;scripts&amp;quot;: [     &amp;quot;../node_modules/jquery/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <script src="../public/ghost-sdk.js?v=deb99df769"></script>
+<script>
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "0494553f080f"
+});
+</script>
+    <meta name="generator" content="Ghost 2.6">
+    <link rel="alternate" type="application/rss+xml" title="w@pache" href="../rss/index.html">
+	</head>
+	<body class="post-template tag-angular tag-javascript tag-web">
+		<header id="header">
+			<a id="logo" href="../"><img src="../content/images/2017/12/hand.jpg" alt="w@pache"></a>
+			<h1><a href="../">w@pache</a></h1>
+                        
+			<div id="icons">
+<a href="mailto:chris@rdrn.me"><i class="fa fa-envelope-square"></i></a>
+<a href="https://www.linkedin.com/in/chris-arderne" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+<a href="http://github.com/carderne" target="_blank"><i class="fa fa-github-square"></i></a>
+</div> 
+			  <div id="internal_link"><h5><a href="../">Home</a></h5></div>
+
+                        <p>IT thoughts, stories and ideas Use the links above to learn more, see my work and get in touch.</p>
+		</header>
+		<main id="content"> 
+			<article id="5bf5e8b7b7b9b605c6486e0c" class="post tag-angular tag-javascript tag-web">
+	<div class="post-stamp">26 January 2018<span class="taglist"> · <a href="../tag/angular/">Angular</a> <a href="../tag/javascript/">JavaScript</a> <a href="../tag/web/">web</a></span></div>
+	<h1 class="post-title">Angular 2/4 &amp; Bootstrap</h1>
+	<p>First need to install Boostrap, jQuery and ng-bootstrap with:</p>
+<pre><code>  npm install bootstrap jquery @ng-bootstrap/ng-bootstrap --save
+</code></pre>
+<p>Next add Boostrap and jQuery file paths to angular-cli.json:</p>
+<pre><code>  "styles": [
+    "styles.css",
+    "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+  ],
+  "scripts": [
+    "../node_modules/jquery/dist/jquery.min.js",
+    "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+  ],
+</code></pre>
+<p>And import of this component to app.module.ts:</p>
+<pre><code>import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+</code></pre>
+<p>Next, we need to add this module to the imports array of the @NgModule decorator. If you want to import NgbModule in your root module (e.g. AppModule) you need to call the forRoot() factory method, as you can see in the following:</p>
+<pre><code>@NgModule({
+  declarations: [AppComponent, ...],
+  imports: [NgbModule.forRoot(), ...],
+  bootstrap: [AppComponent]
+})
+export class AppModule {
+}
+</code></pre>
+<p>If you want to import NgbModule in other modules (child modules of your root application module) you need to add it without calling the forRoot() method:</p>
+<pre><code>@NgModule({
+  declarations: [OtherComponent, ...],
+  imports: [NgbModule, ...]
+})
+export class OtherModule {
+}
+</code></pre>
+<p>Let’s try it out and use some of these components in app.component.html:</p>
+<pre><code class="language-html">&lt;div class="container"&gt;
+  &lt;ngb-tabset&gt;
+    &lt;ngb-tab title="Simple"&gt;
+      &lt;template ngbTabContent&gt;
+        &lt;p&gt;This is the content of the first tab!&lt;/p&gt;
+        &lt;ngb-alert [dismissible]="false"&gt;
+          &lt;strong&gt;Warning!&lt;/strong&gt; This is an alert!
+        &lt;/ngb-alert&gt;
+      &lt;/template&gt;
+    &lt;/ngb-tab&gt;
+    &lt;ngb-tab&gt;
+      &lt;template ngbTabTitle&gt;&lt;b&gt;Fancy&lt;/b&gt; title&lt;/template&gt;
+      &lt;template ngbTabContent&gt;
+        &lt;p&gt;This is the content of the second tab!&lt;/p&gt;
+        &lt;p&gt;&lt;ngb-progressbar type="success" [value]="25"&gt;&lt;/ngb-progressbar&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;ngb-progressbar type="info" [value]="50"&gt;&lt;/ngb-progressbar&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;ngb-progressbar type="warning" [value]="75"&gt;&lt;/ngb-progressbar&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;ngb-progressbar type="danger" [value]="100"&gt;&lt;/ngb-progressbar&gt;&lt;/p&gt;
+      &lt;/template&gt;
+    &lt;/ngb-tab&gt;
+    &lt;ngb-tab title="Disabled" [disabled]="true"&gt;
+      &lt;template ngbTabContent&gt;
+        &lt;p&gt;This tab is disabled&lt;/p&gt;
+      &lt;/template&gt;
+    &lt;/ngb-tab&gt;
+  &lt;/ngb-tabset&gt;
+&lt;/div&gt;
+</code></pre>
+
+</article>  
+
+		</main>
+		<footer id="footer">
+			<section id="footer-message">© 2018 w@pache.</section>
+		</footer>
+	
+	
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	</body>

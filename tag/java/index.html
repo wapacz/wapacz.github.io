@@ -1,0 +1,149 @@
+
+	<head>
+            <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <title>Java - w@pache</title>
+	    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700" rel="stylesheet" type="text/css">
+			<link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css">
+			<link rel="stylesheet" type="text/css" href="../../assets/styles/crisp.css?v=deb99df769">
+	    <meta name="HandheldFriendly" content="True">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+			<!--[if lt IE 9]>
+				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+				<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+			<![endif]-->
+			
+	    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="w@pache">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Java - w@pache">
+    <meta property="og:url" content="http://localhost:2368/tag/java/">
+    <meta property="article:modified_time" content="2018-03-27T09:39:21.000Z">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Java - w@pache">
+    <meta name="twitter:url" content="http://localhost:2368/tag/java/">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Series",
+    "publisher": {
+        "@type": "Organization",
+        "name": "w@pache",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/2017/12/hand.jpg",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "url": "http://localhost:2368/tag/java/",
+    "name": "Java",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <script src="../../public/ghost-sdk.js?v=deb99df769"></script>
+<script>
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "0494553f080f"
+});
+</script>
+    <meta name="generator" content="Ghost 2.6">
+    <link rel="alternate" type="application/rss+xml" title="w@pache" href="../../rss/index.html">
+	</head>
+	<body class="tag-template tag-java">
+		<header id="header">
+			<a id="logo" href="../../"><img src="../../content/images/2017/12/hand.jpg" alt="w@pache"></a>
+			<h1><a href="../../">w@pache</a></h1>
+                        
+			<div id="icons">
+<a href="mailto:chris@rdrn.me"><i class="fa fa-envelope-square"></i></a>
+<a href="https://www.linkedin.com/in/chris-arderne" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+<a href="http://github.com/carderne" target="_blank"><i class="fa fa-github-square"></i></a>
+</div> 
+			  <div id="internal_link"><h5><a href="../../">Home</a></h5></div>
+
+                        <p>IT thoughts, stories and ideas Use the links above to learn more, see my work and get in touch.</p>
+		</header>
+		<main id="content"> 
+			<h1 class="post-title">Java</h1> 
+<article class="post tag-java tag-patterns">
+    <div id="internal_link"><h3><a href="../../java-singleton-vs-static/">(Java) Singleton vs. static</a></h3></div>
+<section class="post-excerpt">
+        <p>When to use Static Class in place of Singleton in Java Indeed there are some situations, where static classes makes sense than Singleton. Prime example of this is java.lang.Math which is not Singleton, instead a class with all static methods. Here are few situation where I think using <a class="read-more" href="../../java-singleton-vs-static/">»</a></p>
+</section>
+    <footer class="post-meta">
+        <time class="post-date" datetime="2018-03-27">27 March 2018</time>
+    </footer>
+</article>
+<article class="post tag-java tag-cdi tag-jee">
+    <div id="internal_link"><h3><a href="../../dynamic-injection-in-cdi/">Dynamic injection in CDI</a></h3></div>
+<section class="post-excerpt">
+        <p>Create EnvironmentType enum: public enum EnvironmentType { VAPP, PHYSICAL, CLOUD } then create qualifier: @Qualifier @Retention(RetentionPolicy.RUNTIME) @Target({ElementType.FIELD, ElementType.TYPE}) public @interface EnvironmentQualifier {     EnvironmentType value(); } ... next create abstract class or interface Environment: public interface Environment {     Machine getMachine(String name); } then create EnvironmentLiteral to be able to select environment with <a class="read-more" href="../../dynamic-injection-in-cdi/">»</a></p>
+</section>
+    <footer class="post-meta">
+        <time class="post-date" datetime="2018-01-19">19 January 2018</time>
+    </footer>
+</article>
+<article class="post tag-java tag-spring tag-spring-boot">
+    <div id="internal_link"><h3><a href="../../spring-boot/">Spring-boot without start.spring.io</a></h3></div>
+<section class="post-excerpt">
+        <p>Create simple app using maven mvn archetype:generate -DgroupId=org.catcher -DartifactId=SampleApp -DarchetypeArtifactId=maven-archetype-webapp Add parent spring-boot-starter to main pom.xml &lt;parent&gt;     &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;     &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;     &lt;version&gt;1.5.8.RELEASE&lt;/version&amp; <a class="read-more" href="../../spring-boot/">»</a></p>
+</section>
+    <footer class="post-meta">
+        <time class="post-date" datetime="2017-12-13">13 December 2017</time>
+    </footer>
+</article>
+<article class="post tag-java">
+    <div id="internal_link"><h3><a href="../../classpath-in-java/">Classpath in Java</a></h3></div>
+<section class="post-excerpt">
+        <p>http://www.theserverside.com/tutorial/Classloaders-Demystified-Understanding-How-Java-Classes-Get-Loaded-in-Web-Applications <a class="read-more" href="../../classpath-in-java/">»</a></p>
+</section>
+    <footer class="post-meta">
+        <time class="post-date" datetime="2017-11-23">23 November 2017</time>
+    </footer>
+</article>
+<article class="post tag-java tag-ubuntu">
+    <div id="internal_link"><h3><a href="../../switching-between-jdk8-and-jdk9-on-ubuntu/">Switching between JDK8 and JDK9 on Ubuntu</a></h3></div>
+<section class="post-excerpt">
+        <p>To switch to Java 8 run: sudo update-java-alternatives --set /usr/lib/jvm/java-1.8.0-openjdk-amd64 To switch to Java 9 run: sudo update-java-alternatives --set /usr/lib/jvm/java-1.9.0-openjdk-amd64 <a class="read-more" href="../../switching-between-jdk8-and-jdk9-on-ubuntu/">»</a></p>
+</section>
+    <footer class="post-meta">
+        <time class="post-date" datetime="2017-11-18">18 November 2017</time>
+    </footer>
+</article>
+<article class="post tag-java tag-jee">
+    <div id="internal_link"><h3><a href="../../dao-dto/">DAO - DTO</a></h3></div>
+<section class="post-excerpt">
+        <p>Model Mapper - very nice lib: http://modelmapper.org/getting-started/ <a class="read-more" href="../../dao-dto/">»</a></p>
+</section>
+    <footer class="post-meta">
+        <time class="post-date" datetime="2017-09-26">26 September 2017</time>
+    </footer>
+</article>
+<nav class="pagination" role="pagination">
+    
+    <span class="page-number">Page 1 of 1</span>
+    
+</nav>
+
+		</main>
+		<footer id="footer">
+			<section id="footer-message">© 2018 w@pache.</section>
+		</footer>
+	
+	
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	</body>

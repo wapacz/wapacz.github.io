@@ -1,0 +1,155 @@
+
+	<head>
+            <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <title>(Java) Singleton vs. static</title>
+	    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700" rel="stylesheet" type="text/css">
+			<link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css">
+			<link rel="stylesheet" type="text/css" href="../assets/styles/crisp.css?v=deb99df769">
+	    <meta name="HandheldFriendly" content="True">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+			<!--[if lt IE 9]>
+				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+				<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+			<![endif]-->
+			
+	    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="amp/index.html">
+    
+    <meta property="og:site_name" content="w@pache">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="(Java) Singleton vs. static">
+    <meta property="og:description" content="When to use Static Class in place of Singleton in Java Indeed there are some situations, where static classes makes sense than Singleton. Prime example of this is java.lang.Math which is not Singleton, instead a class with all static methods. Here are few situation where I think using">
+    <meta property="og:url" content="http://localhost:2368/java-singleton-vs-static/">
+    <meta property="article:published_time" content="2018-03-27T09:38:00.000Z">
+    <meta property="article:modified_time" content="2018-03-27T09:39:21.000Z">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="patterns">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="(Java) Singleton vs. static">
+    <meta name="twitter:description" content="When to use Static Class in place of Singleton in Java Indeed there are some situations, where static classes makes sense than Singleton. Prime example of this is java.lang.Math which is not Singleton, instead a class with all static methods. Here are few situation where I think using">
+    <meta name="twitter:url" content="http://localhost:2368/java-singleton-vs-static/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Michał Łapacz">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Java, patterns">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "w@pache",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/2017/12/hand.jpg",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Michał Łapacz",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/785a0bbce82085cf46e7e844469b58e5?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "http://localhost:2368/author/michal/",
+        "sameAs": []
+    },
+    "headline": "(Java) Singleton vs. static",
+    "url": "http://localhost:2368/java-singleton-vs-static/",
+    "datePublished": "2018-03-27T09:38:00.000Z",
+    "dateModified": "2018-03-27T09:39:21.000Z",
+    "keywords": "Java, patterns",
+    "description": "When to use Static Class in place of Singleton in Java Indeed there are some situations, where static classes makes sense than Singleton. Prime example of this is java.lang.Math which is not Singleton, instead a class with all static methods. Here are few situation where I think using",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <script src="../public/ghost-sdk.js?v=deb99df769"></script>
+<script>
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "0494553f080f"
+});
+</script>
+    <meta name="generator" content="Ghost 2.6">
+    <link rel="alternate" type="application/rss+xml" title="w@pache" href="../rss/index.html">
+	</head>
+	<body class="post-template tag-java tag-patterns">
+		<header id="header">
+			<a id="logo" href="../"><img src="../content/images/2017/12/hand.jpg" alt="w@pache"></a>
+			<h1><a href="../">w@pache</a></h1>
+                        
+			<div id="icons">
+<a href="mailto:chris@rdrn.me"><i class="fa fa-envelope-square"></i></a>
+<a href="https://www.linkedin.com/in/chris-arderne" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+<a href="http://github.com/carderne" target="_blank"><i class="fa fa-github-square"></i></a>
+</div> 
+			  <div id="internal_link"><h5><a href="../">Home</a></h5></div>
+
+                        <p>IT thoughts, stories and ideas Use the links above to learn more, see my work and get in touch.</p>
+		</header>
+		<main id="content"> 
+			<article id="5bf5e8b7b7b9b605c6486e14" class="post tag-java tag-patterns">
+	<div class="post-stamp">27 March 2018<span class="taglist"> · <a href="../tag/java/">Java</a> <a href="../tag/patterns/">patterns</a></span></div>
+	<h1 class="post-title">(Java) Singleton vs. static</h1>
+	<h3 id="whentousestaticclassinplaceofsingletoninjava">When to use Static Class in place of Singleton in Java</h3>
+<p>Indeed there are some situations, where static classes makes sense than Singleton. Prime example of this is java.lang.Math which is not Singleton, instead a class with all static methods. Here are few situation where I think using static class over Singleton pattern make sense:</p>
+<ol>
+<li>If your Singleton is not maintaining any state, and just providing global access to methods, than consider using static class, as static methods are much faster than Singleton, because of static binding during compile time. But remember its not advised to maintain state inside static class, especially in concurrent environment, where it could lead subtle race conditions when modified parallel by multiple threads without adequate synchronization.</li>
+</ol>
+<p>You can also choose to use static method, if you need to combine bunch of utility method together. Anything else, which requires singles access to some resource, should use Singleton design pattern.</p>
+<h3 id="differencebetweensingletonvsstaticinjava">Difference between Singleton vs Static in Java</h3>
+<p>This is answer of our second interview question about Singleton over static. As I said earlier, fundamental difference between them is, one represent object while other represent a method. Here are few more differences between static and singleton in Java.</p>
+<ol>
+<li>
+<p>Static class provides better performance than Singleton pattern, because static methods are bonded on compile time.</p>
+</li>
+<li>
+<p>One more difference between Singleton and static is, ability to override. Since static methods in Java cannot be overridden, they leads to inflexibility. On the other hand, you can override methods defined in Singleton class by extending it.</p>
+</li>
+<li>
+<p>Static classes are hard to mock and consequently hard to test than Singletons, which are pretty easy to mock and thus easy to test. It’s easier to write JUnit test for Singleton than static classes, because you can pass mock object whenever Singleton is expected, e.g. into constructor or as method arguments.</p>
+</li>
+<li>
+<p>If your requirements needs to maintain state than Singleton pattern is better choice than static class, because<br>
+maintaining  state in later case is nightmare and leads to subtle bugs.</p>
+</li>
+<li>
+<p>Singleton classes can be lazy loaded if its an heavy object, but static class doesn't have such advantages and always eagerly loaded.</p>
+</li>
+<li>
+<p>Many Dependency Injection framework manages Singleton quite well e.g. Spring, which makes using them very easy.</p>
+</li>
+</ol>
+<p>These are some differences between static class and singleton pattern, this will help to decide between two, which situation arises. In next section we will when to choose Singleton pattern over static class in Java.</p>
+<h3 id="advantageofsingletonpatternoverstaticclassinjava">Advantage of Singleton Pattern over Static Class in Java</h3>
+<p>Main advantage of Singleton over static is that former is more object oriented than later. With Singleton, you can use Inheritance and Polymorphism to extend a base class, implement an interface and capable of providing different implementations. If we talk about java.lang.Runtime, which is a Singleton in Java, call to getRuntime() method return different implementations based on different JVM, but guarantees only one instance per JVM, had java.lang.Runtime an static class, it’s not possible to return different implementation for different JVM.</p>
+<p>That’s all on difference between Singleton and static class in Java. When you need a class with full OO capability , chose Singleton, while if you just need to store bunch of static methods together, than use static class.</p>
+<p>Read more: <a href="http://javarevisited.blogspot.com/2013/03/difference-between-singleton-pattern-vs-static-class-java.html#ixzz5AwHJZAic">http://javarevisited.blogspot.com/2013/03/difference-between-singleton-pattern-vs-static-class-java.html#ixzz5AwHJZAic</a></p>
+
+</article>  
+
+		</main>
+		<footer id="footer">
+			<section id="footer-message">© 2018 w@pache.</section>
+		</footer>
+	
+	
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	</body>
